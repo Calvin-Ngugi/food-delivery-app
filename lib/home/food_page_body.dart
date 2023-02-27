@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_delivery/utils/colors.dart';
 import 'package:food_delivery/widgets/big_text.dart';
+import 'package:food_delivery/widgets/icon_and_text_widget.dart';
 import 'package:food_delivery/widgets/small_text.dart';
 
 class FoodPageBody extends StatefulWidget {
@@ -50,7 +51,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
               color: Colors.white
             ),
             child: Container(
-              padding: EdgeInsets.only(top: 10.0, left: 15, right: 15),
+              padding: EdgeInsets.only(top: 5.0, left: 15, right: 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -70,6 +71,14 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                     ],
                   ),
                   SizedBox(height: 15),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      IconAndTextWidget(icon: Icons.circle, iconColor: Colors.deepOrangeAccent, color: AppColors.paraColor, text: 'Normal'),
+                      IconAndTextWidget(icon: Icons.location_on, iconColor: AppColors.mainColor, color: AppColors.paraColor, text: '1.7Km'),
+                      IconAndTextWidget(icon: Icons.watch_later_outlined, iconColor: Colors.red, color: AppColors.paraColor, text: '32 Min'),
+                    ],
+                  )
                 ],
               ),
             ),
