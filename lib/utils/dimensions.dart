@@ -5,9 +5,9 @@ class Dimensions{
   static double screenHeight = Get.context!.height;
   static double screenWidth = Get.context!.width;
   //containers
-  static double pageView = screenHeight/2.64;
+  static double pageView = screenHeight/2.66;
   static double pageViewContainer = screenHeight/3.84;
-  static double pageViewTextContainer = screenHeight/7.03;
+  static double pageViewTextContainer = screenHeight/6.28;
   //height
   static double height50 = screenHeight/16.8;
   static double height40 = screenHeight/21.1;
@@ -33,4 +33,7 @@ class Dimensions{
   static double radius10 = screenHeight/84.4;
   //icons
   static double iconSize24 = screenHeight/35.17;
+  //ListView
+  static double listViewImgSize = screenWidth/3.25;
+  static double listViewTextContSize = screenWidth/3.9;
 }
