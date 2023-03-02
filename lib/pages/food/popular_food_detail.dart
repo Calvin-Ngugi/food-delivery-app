@@ -107,7 +107,7 @@ class PopularFoodDetail extends StatelessWidget {
                 color: AppColors.mainColor
               ),
               child: BigText(text: "550Ksh | Order", color: Colors.white,),
-            )
+            ),
           ],
         ),
       ),
