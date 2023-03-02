@@ -4,6 +4,7 @@ import 'package:food_delivery/utils/dimensions.dart';
 import 'package:food_delivery/widgets/app_column.dart';
 import 'package:food_delivery/widgets/app_icon.dart';
 import 'package:food_delivery/widgets/big_text.dart';
+import 'package:food_delivery/widgets/expandable_text_widget.dart';
 
 class PopularFoodDetail extends StatelessWidget {
   const PopularFoodDetail({Key? key}) : super(key: key);
@@ -14,6 +15,7 @@ class PopularFoodDetail extends StatelessWidget {
       backgroundColor: Colors.white,
       body: Stack(
         children: [
+          //background image
           Positioned(
             left: 0,
             right: 0,
@@ -29,6 +31,7 @@ class PopularFoodDetail extends StatelessWidget {
                 )
               ),
             )),
+          //icons appbar
           Positioned(
             top: Dimensions.height40,
             left: Dimensions.width20,
@@ -41,6 +44,7 @@ class PopularFoodDetail extends StatelessWidget {
               ],
             )
           ),
+          //introduction of food
           Positioned(
             left: 0,
             right: 0,
@@ -61,6 +65,9 @@ class PopularFoodDetail extends StatelessWidget {
                   AppColumn(text: "Fruity French Toast",),
                   SizedBox(height: Dimensions.height20,),
                   BigText(text: "Introduce"),
+                  SizedBox(height: Dimensions.height20),
+                  Expanded(child: SingleChildScrollView(child: ExpandableTextWidget(text: "Lorem ipsum dolor sit amet ultricies sit enim vitae velit eros curabitur fermentum vel in hendrerit augue massa molestie sodales duis nam bibendum quisque ac ante curae etiam porttitor porta pellentesque egestas nulla sapien sollicitudin nostra penatibus libero sed odio et nascetur mi lacinia quam ex convallis felis scelerisque inceptos venenatis dis purus auctor pharetra vivamus netus facilisis gravida torquent aliquet sagittis mattis tincidunt iaculis potenti ligula metus lorem congue class fringilla fames proin adipiscing sem nec rutrum ut conubia dignissim ullamcorper faucibus consequat vehicula maximus maecenas fusce ultrices cubilia nisl litora feugiat ridiculus condimentum posuere senectus luctus"))),
+
                 ],
               ),
             ),
